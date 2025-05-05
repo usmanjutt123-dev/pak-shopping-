@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RedBlack Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: red;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background-color: #222;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .btn {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product-card {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #333;
+      width: 200px;
+    }
+
+    .product-card img {
+      width: 100%;
+    }
+
+    form input, form textarea {
+      width: 80%;
+      margin: 10px auto;
+      padding: 10px;
+      background: #222;
+      border: 1px solid #444;
+      color: #fff;
+      display: block;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">RedBlack Shop</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to RedBlack Shop</h1>
+    <p>Your one-stop destination for bold style and deals.</p>
+    <a href="#shop" class="btn">Shop Now</a>
+  </section>
+
+  <section id="shop">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 1" />
+        <h3>Product 1</h3>
+        <p>$29.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 2" />
+        <h3>Product 2</h3>
+        <p>$39.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 3" />
+        <h3>Product 3</h3>
+        <p>$49.99</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At RedBlack Shop, we blend high-quality fashion with unbeatable pricing. Our goal is to make you look good — effortlessly.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RedBlack Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
